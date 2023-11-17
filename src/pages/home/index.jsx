@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./index.module.scss";
-import HorizontalCard from "../../components/HomeCard/horizontal-card";
-import VerticalCard from "../../components/HomeCard/vertical-card";
+import HorizontalCard from "../../components/HomeCard/horizontalCard";
+import VerticalCard from "../../components/HomeCard/verticalCard";
 import Products from "../../components/HomeProducts";
 import Layout from "../../components/Layout";
 import { Provider } from 'react-redux';

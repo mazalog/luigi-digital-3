@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import Spinner from './Spinner'
 import Products from '../components/HomeProducts/index'
-import VerticalCard from '../components/HomeCard/vertical-card'
+import VerticalCard from './HomeCard/verticalCard'
 
 function Items(props) {
 
