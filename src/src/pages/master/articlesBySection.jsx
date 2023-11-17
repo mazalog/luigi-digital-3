@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import NavBarMaster from '../../components/NavBarMaster'
 import useUser from '../../hooks/useUser'
 import store from '../../redux/store'
-import ListArticlesBySectionMaster from 'src/components/ListArticlesBySectionMaster'
+import ListArticlesBySectionMaster from '../../components/ListArticlesBySectionMaster'
 
 export default function ArticlesBySection({ params }) {
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Provider } from 'react-redux'
-import HorizontalCard from 'src/components/HomeCard/horizontal-card'
+import HorizontalCard from '../../components/HomeCard/horizontalCard'
 import ListArticles from '../../components/ListArticlesMaster'
 import NavBarMaster from '../../components/NavBarMaster'
 import useUser from '../../hooks/useUser'

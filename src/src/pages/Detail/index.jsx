@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "../../redux/store";
 import AddCart from '../../components/AddCart'
 import useArticlesForId from "../../hooks/useArticleForId";
-import Spinner from "src/components/Spinner";
+import Spinner from "../../components/Spinner";
 import { Helmet } from "react-helmet";
 // import useRelatedProducts from "src/hooks/useRelatedProducts";
 
