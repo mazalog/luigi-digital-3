@@ -1,0 +1,189 @@
+@import "../../styles/breakpoints.scss";
+
+.verticalCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  direction: initial;
+  position: relative;
+  max-width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+
+  @include md{
+    /* border: 1px solid #f1f1f1; */
+    padding: 15px;
+    border-radius: 10px;
+    background: #475056;
+  }
+
+  &:hover {
+    @include md{
+      box-shadow: 0px 0px 8px 0px #00000033;
+    }
+
+  
+  }
+
+  .favContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    background: #070a17;
+    color: white;
+    z-index: 10;
+    font-weight: bold;
+    padding: 8px;
+    /* bottom: 0px; */
+    top: -10px;
+    border-radius: 60px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    border:2px solid #127eb4;
+    }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    // justify-content: center;
+    word-break: break-word;
+    flex-grow: 1;
+    min-height:100px;
+    
+    .price_and_starts{
+      display: grid;
+      // grid-template-columns: repeat(3,1fr);
+    }
+
+    .brandText {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin: 0px;
+      z-index: 1;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 8px;
+      height: 40px;
+      color: #fff;
+      text-align: initial;
+      overflow: hidden;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 500;
+      color: gray;
+    }
+
+    .priceContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .discount {
+        background-color: red;
+        border-radius: 4px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: perspective(10px);
+        font-size: 17px;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .prices {
+        display: flex;
+        flex-direction: column;
+       .containerStartandSale{
+         display: grid;
+         margin-left: 12px;
+        grid-template-columns: repeat(3,1fr);        
+       }
+
+
+        .priceText {
+          text-decoration: line-through;
+          color: grey;
+          font-weight: bold;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .salePriceText {
+      font-size: 19px;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+
+    .imageContainer {
+    // box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    @include md{
+      transform: scale(0.97);
+    }
+
+    }
+  }
+  .add{
+    border: 0;
+    border-radius: 999px;
+    width: 40px;
+    color: #fff;
+    font-size: 24px;
+    height: 40px;
+    // top: -5px;
+    transform: perspective(10px);
+    z-index: 1;
+    background: #0e0e0e;
+    position: absolute;
+    right: 3px;
+    bottom: 13px;
+
+    cursor: pointer;
+  }
+
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 105%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    flex-shrink: 0;
+
+  
+    .image {
+      position: absolute;
+      border-radius: 8px;
+      top: 0px;
+      border: 1px solid #ccc;
+      height: 100%;
+      width: 90%;
+      background-color: #ccc;
+      max-width: min-content;
+    min-width: 140px;
+    }
+  }
+
+  .bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+}
+

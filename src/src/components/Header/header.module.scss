@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+@import "../../styles/breakpoints.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 20px;
+
+  @include md {
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0px;
+    box-shadow: 0px 0px 8px 0px #00000033;
+    height: 90px;
+    // border-bottom: 1px solid #f6f6f6;
+    background: #ffffff36;
+  }
+  .logoContainerTwo {
+  
+    margin-top: -10px;
+    display: flex;
+    
+    .containerLogoImg{
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      display: grid;
+      justify-items: center;
+      .logoImg{
+        border-radius: 50%;
+        width: 32%;
+        border: 2px solid #109baa;
+      }
+      @include md{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        margin-top: 10px;
+      }
+  
+    }
+
+    .arrowIcon{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      cursor: pointer;
+      border: 0;
+    }
+
+    .logo{
+      max-height: 70px;
+      border: 2px solid #ca28c0;
+      display: grid;
+      justify-self: center;
+      align-self: center;
+      justify-content: center;
+      margin-top: 30px;
+      width: 22px;
+      height: 22px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 20px;
+      @include md{
+        display: none;
+      }
+    }
+
+    @include md {
+      font-size: 37px;
+      font-weight: 600;
+      width: 240px;
+    }
+
+    .rightContentMobile {
+      display: flex;
+      margin-left: auto;
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+      margin-top: 8px;
+      @include md {
+        display: none;
+      }
+
+      //mobile cart container
+      .cartContainer {
+        position: relative;
+
+        div {
+          position: absolute;
+          top: -4px;
+          right: -8px;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      .profileContainer {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .logoContainer {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size:34px;
+    width: 100%;
+    margin-top: -10px;
+    display: none;
+    align-items: center;
+
+    @include md{
+      display: flex;
+    }
+    
+    .containerLogoImg{
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      display: grid;
+      justify-items: center;
+      .logoImg{
+        border-radius: 50%;
+        width: 32%;
+        border: 2px solid #109baa;
+      }
+      @include md{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        margin-top: 10px;
+      }
+  
+    }
+
+    .arrowIcon{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      cursor: pointer;
+      border: 0;
+    }
+
+    .logo{
+      max-height: 70px;
+      border: 2px solid #ca28c0;
+      display: grid;
+      justify-self: center;
+      align-self: center;
+      justify-content: center;
+      margin-top: 30px;
+      width: 22px;
+      height: 22px;
+      margin-top: 40px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 20px;
+      @include md{
+        display: none;
+      }
+    }
+
+    @include md {
+      font-size: 37px;
+      font-weight: 600;
+      width: 240px;
+    }
+
+    .rightContentMobile {
+      display: flex;
+      margin-left: auto;
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+      margin-top: 8px;
+      @include md {
+        display: none;
+      }
+
+      //mobile cart container
+      .cartContainer {
+        position: relative;
+
+        div {
+          position: absolute;
+          top: -4px;
+          right: -8px;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      .profileContainer {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    background: #ffffff12;
+    border-radius: 10px;
+    width: 200px;
+    padding: 6px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 12px;
+
+    @include md {
+      width: 400px;
+      padding: 10px;
+    margin-top: 5px;
+    background: #f1f1f1;
+
+    }
+
+    form {
+      width: 100%;
+
+     input{
+         &:focus-visible{
+         border:none;
+         outline: none;
+        }
+     }
+      .searchInput {
+        border: 0;
+        display: flex;
+        width: 100%;
+        background-color: transparent;
+        font-size: 17px;
+        flex-wrap: wrap;
+      }
+    }
+
+    .searchIcon {
+      margin-right: 10px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
+  .rightContent {
+    display: none;
+    font-weight: bold;
+    margin-left: auto;
+    @include md {
+      display: flex;
+    }
+
+    .cartContainer {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px;
+
+      .cartIcon {
+        margin-right: 8px;
+      }
+    }
+
+    .profileContainer {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+      position: relative;
+
+      .profilePhoto {
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        margin-right: 14px;
+        z-index: 10;
+      }
+
+      .arrowIcon {
+        margin-left: 8px;
+        margin-top: 1px;
+        z-index: 10;
+      }
+
+      span {
+        z-index: 10;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        z-index: 20;
+        top: 10px;
+        left: -50%;
+        padding: 20px;
+
+        .arrowUp {
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+
+          border-bottom: 15px solid #f1f1f1;
+        }
+        .dropdownMenu {
+          background-color: #f1f1f1;
+          line-height: 42px;
+          font-size: 14px;
+        }
+      }
+
+      &:hover {
+        .dropdown {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-width: 300px;
+
+          .dropdownMenu {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            padding-right: 50px;
+            border: 1px solid #d6d6d6;
+            border-radius: 10px;
+            box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.07);
+          }
+        }
+      }
+    }
+  }
+
+  .rightMenu {
+    .menuContent {
+      transform: translate3d(100vw, 0, 0);
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #0b1115;
+      height: 100%;
+      width: 70vw;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      display: flex;
+      color: white;
+      z-index: 100;
+      padding-top: 20px;
+
+      a {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px;
+      }
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: transparent;
+      cursor: pointer;
+      border: 0;
+
+      @include md {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+@import "../../styles/breakpoints.scss";
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background: #ffffff12;
+  border-radius: 10px;
+  width: 200px;
+  padding: 6px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 12px;
+
+  @include md {
+    width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    background: #f1f1f1;
+
+  }
+
+  form {
+    width: 100%;
+
+    input {
+      color: rgb(0, 0, 0);
+    }
+
+    input {
+      &:focus-visible {
+        border: none;
+
+        outline: none;
+      }
+    }
+
+    .searchInput {
+      border: 0;
+      display: flex;
+      width: 100%;
+      background-color: transparent;
+      font-size: 17px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .searchIcon {
+    margin-right: 10px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}

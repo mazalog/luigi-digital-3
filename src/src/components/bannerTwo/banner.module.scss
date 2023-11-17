@@ -1,0 +1,96 @@
+@import "../../styles/breakpoints.scss";
+
+.verticalCard {
+    display: grid;
+    margin-top: 20px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    direction: ltr;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    grid-template-columns: repeat(1,1fr);
+
+  @include md{
+  display:none;
+  }
+
+
+
+  .textContainer {
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    word-break: break-word;
+    flex-grow: 1;
+    
+    .price_and_starts{
+      display: grid;
+    }
+
+    .brandText {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin: 0px;
+      z-index: 1;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center ;
+      overflow: hidden;
+        color:gray;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+  
+  }
+
+  &:hover {
+
+    .imageContainer {
+    @include md{
+      transform: scale(1.1);
+    }
+
+    }
+  }
+
+
+
+  .imageContainer {
+   
+    
+    display: grid;
+    justify-items: center;
+  
+    .image {
+
+    border-radius: 8px;
+    top: 0;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 46%;
+    background-color: #ccc;
+    max-width: -webkit-fit-content;
+    max-width: fit-content;
+    }
+  }
+
+  .bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+}
+

@@ -1,0 +1,46 @@
+@import "../../styles/breakpoints.scss";
+
+.container {
+  width: 100%;
+  margin-bottom: 30px;
+  .main {
+    padding-bottom: 40px;
+    .containerCards{
+      display:block;
+      @include md{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+      }
+    }
+    .header {
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      flex-direction: column;
+
+      @include md {
+        flex-direction: row;
+      }
+      .title {
+        font-size: 15px;
+        margin: 0 0 0 15px;
+        color: #fff;
+        @include md{
+          font-size: 20px;
+        }
+      }
+
+      .headerButtons {
+        display: flex;
+        font-size: 18px;
+        font-weight: bold;
+
+        @include md {
+          margin-left: auto;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}

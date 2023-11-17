@@ -1,0 +1,56 @@
+@import "../../styles/breakpoints.scss";
+
+.container__Footer{
+    padding: 20px;
+    background-repeat: round;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2FEl%20verdadero%20significado%20de%20los%20botones%20simb%C3%B3licos%20de%20Playstation..jpg?alt=media&token=8cd163bd-ca31-41b9-b1b9-8bd7af4886d0");
+    background-size: contain;
+    /* height: 190px; */
+    text-align: center;
+    color: #fff;
+
+    @include md{
+    display: grid;
+    grid: none;
+    margin-top: 0px;
+    // grid-template-columns: repeat(3, 1fr);
+    padding: 20px 100px;
+    background-image: none;
+    min-height: 280px;
+    // background-size: cover;
+    background-blend-mode: difference;
+    // background-image: url('https://firebasestorage.googleapis.com/v0/b/modasports-8badc.appspot.com/o/images%2Fbg2.png?alt=media&token=d557a938-a44d-4e2c-b6d0-717bac1774e6');
+    // background-color: #f4f4f4;
+    }
+
+    .text{
+        max-width: 100%;
+    text-align: center;
+    font-weight: 500;
+    }
+
+    .contentFooter{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        div{
+            display: grid;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            text-align: left;
+            cursor: pointer;
+        }
+        @include md{
+        grid-template-columns: repeat(4,1fr);
+
+        }
+    }
+
+}
+.by{
+    height: 70px;
+     @include md{
+         display: none;
+     }
+}

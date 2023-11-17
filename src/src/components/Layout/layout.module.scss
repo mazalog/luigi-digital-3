@@ -1,0 +1,63 @@
+@import "../../styles/breakpoints.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0 13px;
+  @include md{
+    padding: 0px;
+  }
+  .content {
+    max-width: 1400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .main {
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      margin-top: 13px;
+      max-width: 1200px;
+      margin: auto;
+
+       @include md{
+        margin: 2rem auto;
+       }
+      .navElements{
+        display: block;
+
+        @include md{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+
+    }
+  }
+}
+.containerTwo {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: difference;
+  
+
+  .content {
+    max-width: 1400px;
+    width: 100%;
+    min-height: 100vh;
+    .main {
+      display: flex;
+      overflow: hidden;
+      margin: auto;
+      flex-direction: column;
+      max-width: 1200px;
+      margin-top: 30px;
+    }
+  }
+}
+

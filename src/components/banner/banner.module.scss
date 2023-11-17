@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+@import "../../styles/breakpoints.scss";
+
+.horizontalCard {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  justify-content: center;
+  margin: auto;
+  border-left: 21px solid #418df9;
+  background-size: cover;
+  border-radius: 20px;
+  /* padding: 10px; */
+  // background: #00ffff1f;
+  margin-top: 30px;
+  direction: initial;
+  overflow: hidden;
+  background-position: center;
+  position: relative;
+  background-color: #ccc;
+  cursor: pointer;
+  height:110px;
+  box-shadow: -1px 8px 14px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 8px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 8px 14px 0px rgba(0,0,0,0.75);
+  transition: box-shadow 300ms ease-in-out;
+  -webkit-transition: box-shadow 300ms ease-in-out;
+  -moz-transition: box-shadow 300ms ease-in-out;
+  -ms-transition: box-shadow 300ms ease-in-out;
+  -o-transition: box-shadow 300ms ease-in-out;
+  @include md{
+    display:none;
+    min-height: 370px;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    .imageContainer,
+    .bgImage,
+    .textContainer {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
+    .textContainer {
+      z-index: 10;
+    }
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+
+
+
+    h3 {
+      margin-top: 0px;
+      z-index: 10;
+      text-shadow: 2px 2px #00000022;
+      font-size:23px;
+      text-align:center;
+
+      @include md{
+        font-size: 30px;
+      }
+    }
+
+    .description {
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      // display: none;
+      @include md{
+        display: block;
+      }
+
+    }
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+
+    .image {
+      position: absolute;
+    top: -80px;
+    width: 130%;
+     @include md{
+      top: -180px;
+      width: 80%;
+     }
+    }
+  }
+
+  .bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+    @include md{
+
+      border-start-end-radius: 40px;
+      border-end-end-radius: 40px;
+    }
+  }
+}
