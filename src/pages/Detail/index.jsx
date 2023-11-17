@@ -7,7 +7,6 @@ import AddCart from '../../components/AddCart'
 import useArticlesForId from "../../hooks/useArticleForId";
 import Spinner from "../../components/Spinner";
 import { Helmet } from "react-helmet";
-// import useRelatedProducts from "src/hooks/useRelatedProducts";
 
 export default function ProductDetailPage({ params }) {
 

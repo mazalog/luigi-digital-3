@@ -3,7 +3,7 @@ import ShoppingPage from '../../components/ShoppingPage';
 import { Provider } from 'react-redux'
 import store from '../../redux/store'
 import Layout from '../../components/Layout';
-import useArticlesForSearch from 'src/hooks/useArticlesForSearch';
+import useArticlesForSearch from '../../hooks/useArticlesForSearch';
 import { Helmet } from 'react-helmet';
 
 export default function SearchPage({ params }) {

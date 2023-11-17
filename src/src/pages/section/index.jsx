@@ -3,7 +3,7 @@ import ShoppingPage from '../../components/ShoppingPage';
 import { Provider } from 'react-redux'
 import store from '../../redux/store'
 import Layout from '../../components/Layout';
-import useArticlesForCategory from 'src/hooks/useArticlesForCategory';
+import useArticlesForCategory from '../../hooks/useArticlesForCategory';
 import { Helmet } from 'react-helmet';
 
 export default function StorePage({ params }) {

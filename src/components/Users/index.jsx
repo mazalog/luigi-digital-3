@@ -1,5 +1,5 @@
 import React from 'react'
-import useSendWhatsapp from 'src/hooks/useSendWhatsapp'
+import useSendWhatsapp from '../../hooks/useSendWhatsapp'
 import useUsers from '../../hooks/useClients'
 import useNotifications from '../../hooks/useNotifications'
 import Loading from '../Loading'

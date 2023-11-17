@@ -3,7 +3,6 @@ import styles from "./genders.module.scss"
 import HelpIcon from "../icons/help"
 import { useLocation } from "wouter"
 import { connect } from 'react-redux'
-import SortIcon from "src/icons/Sort"
 
 
 
