@@ -28,7 +28,7 @@ function App() {
       <Switch>
         <Route
           path="/"
-          component={HomePage}
+          component={LoginPage}
         />
         <Route
           path="/info"
