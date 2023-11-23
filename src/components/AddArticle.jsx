@@ -60,6 +60,7 @@ function AddArticle(props) {
         'SUSCRIPCIONES-GIFT-CARDS',
         'JRETRO',
         'NSWITCHF',
+        'PRODUCTOSCHINOS',
         'CONSOLAS',
         'FUNKOS',
         'ALQUILER',
