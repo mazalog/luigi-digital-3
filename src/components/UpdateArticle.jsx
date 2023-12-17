@@ -69,13 +69,15 @@ function UpdateArticle(props) {
         'SUSCRIPCIONES-GIFT-CARDS'
     ]
 
-    const genders=[
-        'Niños','Terror','Carreras','Shutter','Peleas','Mundo abierto','Aventuras','Deportivos'
+    const genders = [
+        'Niños', 'Terror', 'Carreras', 'Shutter', 'Peleas', 'Mundo abierto', 'Aventuras', 'Deportivos'
     ]
 
+    const standars = [
+        'Preventa', 'Estreno', 'Populares', 'Estandar'
+    ]
 
     const [values, setValues] = useState({})
-
 
     const handleInputChange = (e) => {
         setValues({
@@ -125,7 +127,7 @@ function UpdateArticle(props) {
 
                                     <label className="label fff m-t-2">Descripción</label>
                                     <textarea defaultValue={props.article.information} className="textarea" name="information" onChange={handleInputChange} />
-{/* 
+                                    {/* 
                                     <label className="label fff m-t-2">Codigo</label>
                                     <input defaultValue={props.article.cod} className="input fff" name="cod" onChange={handleInputChange} />
 
@@ -134,7 +136,7 @@ function UpdateArticle(props) {
 
                                     <label className="label fff m-t-2" >Precio</label>
                                     <input defaultValue={props.article.price} className="input fff" name="price" onChange={handleInputChange} />
-{/* 
+                                    {/* 
                                     <label className="label fff m-t-2" >Precio con descuento</label>
                                     <input defaultValue={props.article.sale_price} className="input fff" name="sale_price" onChange={handleInputChange} /> */}
 
@@ -152,13 +154,13 @@ function UpdateArticle(props) {
                                         <option value="FISICO">FISICO</option>
                                     </select>
 
-                            <label className="label fff m-t-2">Genero - {props.article.brand}</label>
-                            <select defaultValue={props.article.brand} className="select" name="brand" onChange={handleInputChange}>
-                                <option value="">SELECCIONAR</option>
-                                {
-                                    genders.map(doc => <option key={doc} value={doc}>{doc}</option>)
-                                }    
-                            </select> 
+                                    <label className="label fff m-t-2">Genero - {props.article.brand}</label>
+                                    <select defaultValue={props.article.brand} className="select" name="brand" onChange={handleInputChange}>
+                                        <option value="">SELECCIONAR</option>
+                                        {
+                                            genders.map(doc => <option key={doc} value={doc}>{doc}</option>)
+                                        }
+                                    </select>
 
 
                                     <label className="label fff m-t-2">Categoria - {props.article.section}</label>
@@ -168,6 +170,19 @@ function UpdateArticle(props) {
                                             categories.map(doc => <option key={doc} value={doc}>{doc}</option>)
                                         }
                                     </select>
+
+                                    {
+                                        props.article.section === 'ALQUILER' ? <>
+                                            <label className="label fff m-t-2">Tipo de Juego</label>
+                                            <select className="select" name="cod" onChange={handleInputChange}>
+                                                <option value="indefinido">SELECCIONAR</option>
+                                                {
+                                                    standars.map(doc => <option key={doc} value={doc}>{doc}</option>)
+                                                }
+                                            </select>
+                                        </> : <></>
+                                    }
+
 
                                     {/* <label className="label fff m-t-2" >Tallas</label>
                                     <input className="input fff" name="size" onChange={handleInputChange} onDragEnter={() => console.log('hola')} />
