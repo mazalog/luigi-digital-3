@@ -174,7 +174,7 @@ function UpdateArticle(props) {
                                     {
                                         props.article.section === 'ALQUILER' ? <>
                                             <label className="label fff m-t-2">Tipo de Juego</label>
-                                            <select className="select" name="cod" onChange={handleInputChange}>
+                                            <select className="select" name="start" onChange={handleInputChange}>
                                                 <option value="indefinido">SELECCIONAR</option>
                                                 {
                                                     standars.map(doc => <option key={doc} value={doc}>{doc}</option>)
