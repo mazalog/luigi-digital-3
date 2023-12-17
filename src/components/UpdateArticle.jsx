@@ -74,7 +74,9 @@ function UpdateArticle(props) {
     ]
 
     const standars = [
-        'Preventa', 'Estreno', 'Populares', 'Estandar'
+        {
+            id: 1, name: 'Estreno'
+        }
     ]
 
     const [values, setValues] = useState({})
@@ -177,7 +179,7 @@ function UpdateArticle(props) {
                                             <select className="select" name="start" onChange={handleInputChange}>
                                                 <option value="indefinido">SELECCIONAR</option>
                                                 {
-                                                    standars.map(doc => <option key={doc} value={doc}>{doc}</option>)
+                                                    standars.map(doc => <option key={doc.id} value={doc.id}>{doc.name}</option>)
                                                 }
                                             </select>
                                         </> : <></>
