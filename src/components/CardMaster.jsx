@@ -32,6 +32,7 @@ export default function CardMaster({
                 <span className="brand-text">{product_name}</span>
                 <span className="model-text">{information}</span>
                 <span className="brand-text">{section}</span>
+                <span className="brand-text">{brand}</span>
                 <div className="container-add">
                     <span className="item-price-text"> ${price}</span>
                 </div>

@@ -70,13 +70,17 @@ function UpdateArticle(props) {
     ]
 
     const genders = [
-        'Niños', 'Terror', 'Carreras', 'Shutter', 'Peleas', 'Mundo abierto', 'Aventuras', 'Deportivos'
+        'Niños', 'Terror', 'Carreras', 'Shutter', 'Peleas', 'Mundo abierto', 'Aventuras', 'Deportivos', 'Preventa', 'Estreno', 'Populares', 'Estandar'
     ]
 
     const standars = [
         {
             id: 1, name: 'Estreno'
-        }
+        },
+    ]
+
+    const standars2 = [
+        'Preventa', 'Estreno', 'Populares', 'Estandar'
     ]
 
     const [values, setValues] = useState({})
@@ -191,7 +195,7 @@ function UpdateArticle(props) {
                                             <select className="select" name="cod" onChange={handleInputChange}>
                                                 <option value="indefinido">SELECCIONAR</option>
                                                 {
-                                                    standars.map(doc => <option key={doc} value={doc}>{doc}</option>)
+                                                    standars2.map(doc => <option key={doc} value={doc}>{doc}</option>)
                                                 }
                                             </select>
                                         </> : <></>
