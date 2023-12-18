@@ -198,6 +198,25 @@ function AddArticle(props) {
 
                                 </> : <></>
                             }
+
+
+                            {
+                                values.section === 'NSWITCH' ? <>
+                                    {
+                                        values.gender === 'DIGITAL' ? <>
+                                            <label className="label fff m-t-2">Tipo de Juego</label>
+                                            <select className="select" name="cod" onChange={handleInputChange}>
+                                                <option value="indefinido">SELECCIONAR</option>
+                                                {
+                                                    standars.map(doc => <option key={doc} value={doc}>{doc}</option>)
+                                                }
+                                            </select>
+                                        </> : <></>
+                                    }
+
+                                </> : <></>
+                            }
+
                             {
                                 values.section === 'ALQUILER' ? <>
                                     {
