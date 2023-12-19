@@ -70,7 +70,7 @@ function UpdateArticle(props) {
     ]
 
     const genders = [
-        'Niños', 'Terror', 'Carreras', 'Shutter', 'Peleas', 'Mundo abierto', 'Aventuras', 'Deportivos', 'PREVENTA', 'ESTRENO', 'POPULARES', 'ESTANDAR'
+        'Niños', 'Terror', 'Carreras', 'Shutter', 'Peleas', 'Mundo abierto', 'Aventuras', 'Deportivos', 'PREVENTA', 'ESTRENO', 'POPULARES', 'ESTANDAR', 'MAS PEDIDOS'
     ]
 
     const standars = [
