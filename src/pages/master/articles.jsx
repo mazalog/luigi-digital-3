@@ -71,9 +71,16 @@ export default function ArticlesPage() {
                     <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
-                        title="NINTENDO SWITCH"
+                        title="ALQUILER NINTENDO SWITCH"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fimage_processing20200908-12254-1eumqhh.png?alt=media&token=f30c2207-f1ea-435f-b1b9-8e8c2f114629"
                         href="/master/section/NSWITCH"
+                    />
+                    <HorizontalCard
+                        bgColor="#f1f1f1"
+                        sizeAuto
+                        title="NINTENDO SWITCH FISICOS"
+                        bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fimage_processing20200908-12254-1eumqhh.png?alt=media&token=f30c2207-f1ea-435f-b1b9-8e8c2f114629"
+                        href="/master/section/NSWITCHF"
                     />
                     <HorizontalCard
                         bgColor="#f1f1f1"
