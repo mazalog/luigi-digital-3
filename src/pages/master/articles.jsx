@@ -21,7 +21,7 @@ export default function ArticlesPage() {
             <Provider store={store}>
 
                 <div className={styles.containerCards}>
-                    <HorizontalCard
+                    {/* <HorizontalCard
                         bgColor="#fff"
                         href="/master/section/FUNKOS"
                         title=""
@@ -32,27 +32,33 @@ export default function ArticlesPage() {
                         href="/master/section/PS3"
                         title="PS3"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fb9e814ac5468b49ecd90d45f20257dc5.webp?alt=media&token=b4ebd754-c8ec-43c4-b2b2-5c9a6ea292ae"
-                    />
+                    /> */}
                     <HorizontalCard
                         bgColor="#fff"
                         href="/master/section/PS4"
                         title="PS4"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fps4_1x.webp?alt=media&token=be168af4-303a-4441-82bf-5049b1603e6a"
                     />
-                    <HorizontalCard
+                      <HorizontalCard
+                        bgColor="#fff"
+                        href="/master/section/PS5"
+                        title="PS5"
+                        bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2FRECURSOS%20DE%20PAGINA%2Fps5.jpg?alt=media&token=d029b842-1bf6-429a-a5d0-99b548398e85"
+                    />
+                    {/* <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
                         title="ALQUILER PS4 Y PS5"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fps4_1x.webp?alt=media&token=be168af4-303a-4441-82bf-5049b1603e6a"
                         href="/master/section/ALQUILER-PS"
-                    />
-                    <HorizontalCard
+                    /> */}
+                    {/* <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
                         title="XBOX 360"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fxbox-slim.png?alt=media&token=19debd68-79e3-4673-a2a6-8adf8206f725"
                         href="/master/section/X360"
-                    />
+                    /> */}
                     <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
@@ -60,7 +66,7 @@ export default function ArticlesPage() {
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fxbox%20one%20xbox%20series.jpg?alt=media&token=62759a3d-5f38-4b05-a596-69ad9c7b47ef"
                         href="/master/section/XONE-XSERIES"
                     />
-                    <HorizontalCard
+                    {/* <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
                         title="ALQUILER"
@@ -74,7 +80,7 @@ export default function ArticlesPage() {
                         title="ALQUILER NINTENDO SWITCH"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fimage_processing20200908-12254-1eumqhh.png?alt=media&token=f30c2207-f1ea-435f-b1b9-8e8c2f114629"
                         href="/master/section/NSWITCH"
-                    />
+                    /> */}
                     <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
@@ -82,13 +88,13 @@ export default function ArticlesPage() {
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2Fimage_processing20200908-12254-1eumqhh.png?alt=media&token=f30c2207-f1ea-435f-b1b9-8e8c2f114629"
                         href="/master/section/NSWITCHF"
                     />
-                    <HorizontalCard
+                    {/* <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
                         title="JUEGOS RETRO"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2F4a1cacbe919300b15645482f7cac3aad.webp?alt=media&token=60215bb9-959a-4184-8876-673e8c2d7e42"
                         href="/master/section/JRETRO"
-                    />
+                    /> */}
                     <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
@@ -104,14 +110,14 @@ export default function ArticlesPage() {
                         bgImage="https://firebasestorage.googleapis.com/v0/b/mazasocial.appspot.com/o/CONSOLAS.webp?alt=media&token=9dfea89e-e458-4064-b646-669a0884ae77"
                         href="/master/section/CONSOLAS"
                     />
-
+{/* 
                     <HorizontalCard
                         bgColor="#f1f1f1"
                         sizeAuto
                         title="SUSCRIPCIONES & GIFT CARDS"
                         bgImage="https://firebasestorage.googleapis.com/v0/b/panaobrero.appspot.com/o/luigidigital%2F4a7a29894e86e947e8c724b2ea9e0686.webp?alt=media&token=02ece3f5-af39-4597-aa70-4b5170e9f805"
                         href="/master/section/SUSCRIPCIONES-GIFT-CARDS"
-                    />
+                    /> */}
                 </div>
                 {/* <ListArticles /> */}
             </Provider>
